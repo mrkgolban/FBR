@@ -11,8 +11,6 @@ void setup() {
 }
 
 void loop() {
-
-  // put your main code here, to run repeatedly:
   h = static_cast<String>(__TIME__[0]) + static_cast<String>(__TIME__[1]);
   if (h.toInt() >= 0 && h.toInt() <= 12)
     digitalWrite(powerport, HIGH);
